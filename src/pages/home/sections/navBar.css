@@ -1,0 +1,116 @@
+:root{
+    --bleu:#3a6cf4;
+    --gwhite:rgb(230,230,230);
+    --pbleu:#601cfc;
+    --yellow:#fb911f;
+    --red: #c1272d;
+  }
+  
+  *{
+    box-sizing: inherit;
+  }
+  #mainHeader{
+    background-color: white;
+    height: 40px;
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    display: grid; 
+    grid-template-columns:1fr 50px;
+    z-index: 100;
+    position: relative;
+  }
+  #mainHeader  h1{
+    font-size: 1.5em;
+    font-weight: 700;
+    height: 40px;
+    margin: 0;
+    color: #111 ;
+    padding: 5px 0 0 20px;
+    
+  }
+  #mainHeader >h1 span{
+    color:var(--yellow) ;
+  }
+  #mainNav a{
+    color: #111;
+    text-decoration: none;
+    font-family: cantarelle, Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    padding-left: 90px;
+    margin-bottom: 10px;
+  
+  }
+  #mainNav a:hover{
+    color: var(--yellow); 
+  }
+  #menubt {
+    height: 30px;
+    width: 30px;
+    background-color: #111;
+    border: none;
+    position: relative;
+    top: 5px;
+  }
+  #mainNav{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    top:40px;  
+    display: none; 
+   
+  } 
+  #mainNav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+  }
+  
+
+    
+  
+  @media screen and (min-width: 768px) {
+    #menubt{
+        display: none;
+    }
+    #mainHeader{
+       grid-template-columns: 350px 1fr; 
+    }
+  
+    #mainNav{
+        position: static;
+        background-color: transparent;
+        display: block;
+    }
+    #mainNav a{
+        font-size: 1.1em;
+        font-weight: 540;
+        padding: 0 10px;
+        margin-bottom: 0px;
+    }
+    #mainNav ul{
+        flex-direction:row ;
+        justify-content:end;
+        height: 40px;
+        align-items: center;
+    }
+    #mainNav ul li{
+        margin-right: 10px;
+    }
+    #mainNav a:hover{
+        border-bottom: 1px solid var(--yellow);
+    }
+  }  
+  @media screen and (min-width: 1024px){
+  
+    #mainHeader{
+        grid-template-columns: 350px 1fr;
+    }
+  
+   #mainHeader  h1{
+    font-size: 1.6em;
+   }
+  
+  }

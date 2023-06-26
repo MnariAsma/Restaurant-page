@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Raleway:wght@200&display=swap');
+:root {
+  --bleu: #3a6cf4;
+  --gwhite: rgb(230, 230, 230);
+  --pbleu: #601cfc;
+  --yellow: #fb911f;
+}
+
+p {
+  font-weight: 300;
+  color: rgb(17, 17, 17);
+}
+
+* {
+  font-family: cantarelle, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*Home Page Style*/
+#mainHeader > h1 span {
+  color: var(--yellow);
+}
+.firstPage {
+  background: url(../../../images/pageheader-banner.jpg) no-repeat fixed;
+  width: 100%;
+  min-height: 100vh;
+
+  background-size: cover;
+  background-position: center center;
+}
+
+#pageContent {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pageContent .contenu {
+  text-align: center;
+  max-width: 70%;
+}
+#pageContent .contenu h2 {
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+#pageContent .contenu p {
+  color: white;
+  font-size: 1.3em;
+}
+.bt1 {
+  font-size: 1.1em;
+  background-color: var(--yellow);
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  display: inline-block;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.7s ease;
+  margin-left: 10px;
+}
+.bt2 {
+  font-size: 1.1em;
+  background-color: #2a4963;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  display: inline-block;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.7s ease;
+  margin-left: 10px;
+}
+.bt1:hover {
+  letter-spacing: 4px;
+}
+.bt2:hover {
+  letter-spacing: 4px;
+}
+
+/*Menu Page style*/
+
+.leftCol h2 {
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.leftCol h2 span {
+  color: var(--yellow);
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.titre {
+  text-align: center;
+  width: 100%;
+}
+#menu .contenu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#menu .contenu .box {
+  width: 320px;
+  margin: 20px;
+  border: 20px solid white;
+  box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.7);
+}
+#menu .contenu .box .img {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+#menu .contenu .box img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+#menu .contenu .box .text h3 {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 300;
+  color: #111;
+}
+/* 
+  Reservation page style */
+#formContact {
+  background-image: url(../../../images/bg2.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 0px;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+#formContact main h1 {
+  font-size: 1.8em;
+  color: #fb911f;
+  letter-spacing: 0.1em;
+}
+#formContact.contact form {
+  border-top: solid 1px #fb911f;
+  display: grid;
+}
+#formContact div div {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+#formContact.contact textarea {
+  height: 150px;
+  resize: none;
+}
+#formContact button {
+  padding: 10px;
+  background-color: #fb911f;
+  font-size: 1.2em;
+  font-weight: 550;
+  border: none;
+  margin-top: 30px;
+  width: 100%;
+}
+#formContact button:hover {
+  background-color: #d87710;
+}
+#formContact button:active {
+  background-color: #fb911f;
+}
+main {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  margin: 30px;
+}
+#formContact {
+  background-image: url(../../../images/bg2.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 0px;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+#formContact main h1 {
+  font-size: 1.8em;
+  color: #fb911f;
+  letter-spacing: 0.1em;
+}
+#formContact.contact form {
+  border-top: solid 1px #fb911f;
+  display: grid;
+}
+#formContact div div {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+#formContact.contact textarea {
+  height: 150px;
+  resize: none;
+}
+#formContact button {
+  padding: 10px;
+  background-color: #fb911f;
+  font-size: 1.2em;
+  font-weight: 550;
+  border: none;
+  margin-top: 30px;
+  width: 100%;
+}
+#formContact button:hover {
+  background-color: #d87710;
+}
+#formContact button:active {
+  background-color: #fb911f;
+}
+main {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  margin: 30px;
+}
+
+/* Experts page style */
+#experts {
+  margin-top: 100px;
+}
+#experts .contenu {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  margin-top: 40px;
+}
+#experts .contenu .box {
+  width: 250px;
+  margin: 15px;
+}
+#experts .contenu .box img {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+#experts .contenu .box .text h3 {
+  text-align: center;
+  font-weight: 300;
+  color: #111;
+}
+
+@media screen and (max-width: 991px) {
+  .leftCol h2 {
+    font-size: 1.3em;
+    font-weight: 300;
+  }
+
+  #Contact .contenu {
+    margin-left: 25%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #formContact form {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  #formContact.contact form button {
+    grid-column: span 2;
+  }
+}
+
+#Contact {
+  background: url(../../../images/img-form.jpg) no-repeat fixed;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 5px;
+}
+#Contact .contenu {
+  background-color: #fff;
+  padding: 75px 50px;
+  box-shadow: rgba(0, 0, 0, 0.8);
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 40px 0 35%;
+}
+
+#Contact .contenu form input,
+#Contact .contenu form textarea {
+  width: 100%;
+  border: 1px solid #555;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #111;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+}
+#Contact .contenu form .bt[type='submit'] {
+  font-weight: 600;
+  font-size: 1em;
+  background-color: var(--yellow);
+  border: none;
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  outline: none;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  max-width: 120px;
+}
+
+@media screen and (max-width: 480px) {
+  #Contact .continue {
+    margin-left: 15%;
+  }
+}
